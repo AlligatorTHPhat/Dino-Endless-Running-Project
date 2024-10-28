@@ -36,11 +36,11 @@
             this.obstacles1 = new System.Windows.Forms.PictureBox();
             this.obstacles3 = new System.Windows.Forms.PictureBox();
             this.obstacles2 = new System.Windows.Forms.PictureBox();
-            this.Trex = new System.Windows.Forms.PictureBox();
+            this.Character = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.obstacles1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacles3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacles2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Trex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Character)).BeginInit();
             this.SuspendLayout();
             // 
             // lblScore
@@ -105,16 +105,16 @@
             this.obstacles2.TabStop = false;
             this.obstacles2.Tag = "obstacles";
             // 
-            // Trex
+            // Character
             // 
-            this.Trex.BackColor = System.Drawing.Color.Transparent;
-            this.Trex.Image = global::Dino_Endless_Running_Project.Properties.Resources.Running;
-            this.Trex.Location = new System.Drawing.Point(217, 312);
-            this.Trex.Name = "Trex";
-            this.Trex.Size = new System.Drawing.Size(88, 92);
-            this.Trex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Trex.TabIndex = 2;
-            this.Trex.TabStop = false;
+            this.Character.BackColor = System.Drawing.Color.Transparent;
+            this.Character.Image = global::Dino_Endless_Running_Project.Properties.Resources.Running;
+            this.Character.Location = new System.Drawing.Point(217, 312);
+            this.Character.Name = "Character";
+            this.Character.Size = new System.Drawing.Size(88, 92);
+            this.Character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Character.TabIndex = 2;
+            this.Character.TabStop = false;
             // 
             // Form1
             // 
@@ -124,7 +124,7 @@
             this.Controls.Add(this.obstacles1);
             this.Controls.Add(this.obstacles3);
             this.Controls.Add(this.obstacles2);
-            this.Controls.Add(this.Trex);
+            this.Controls.Add(this.Character);
             this.Controls.Add(this.lblHighestScore);
             this.Controls.Add(this.lblScore);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -136,7 +136,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.obstacles1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacles3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.obstacles2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Trex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Character)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,7 +146,7 @@
 
         private System.Windows.Forms.Label lblScore;
         private System.Windows.Forms.Label lblHighestScore;
-        private System.Windows.Forms.PictureBox Trex;
+        private System.Windows.Forms.PictureBox Character;
         private System.Windows.Forms.PictureBox obstacles2;
         private System.Windows.Forms.PictureBox obstacles3;
         private System.Windows.Forms.PictureBox obstacles1;

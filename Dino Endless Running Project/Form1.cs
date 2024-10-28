@@ -116,8 +116,8 @@ namespace Dino_Endless_Running_Project
             lblHighestScore.Text = "Highest Score: " + HighestScore;
 
             hitBox.BackColor = Color.Transparent;
-            hitBox.Width = Trex.Width / 2;
-            hitBox.Height = Trex.Height - 10;
+            hitBox.Width = Character.Width / 2;
+            hitBox.Height = Character.Height - 10;
 
             this.Controls.Add(hitBox);
             //hitBox.BringToFront();
@@ -127,8 +127,8 @@ namespace Dino_Endless_Running_Project
         }
         private void Reset()
         {
-            Trex.Image = Properties.Resources.Running;
-            Trex.Top = 290;
+            Character.Image = Properties.Resources.Running;
+            Character.Top = 290;
 
             int alignedPositionY = 290;
 
@@ -192,10 +192,10 @@ namespace Dino_Endless_Running_Project
                 {
                     if (changeAnim == false)
                     {
-                        Trex.Image = Properties.Resources.Running;
+                        Character.Image = Properties.Resources.Running;
                         changeAnim = true;
                     }
-                    Trex.Top = 320;
+                    Character.Top = 320;
                 }
             }
         }
@@ -204,8 +204,8 @@ namespace Dino_Endless_Running_Project
         {
             if (e.KeyCode == Keys.Down && !gameover)
             {
-                Trex.Image = Properties.Resources.Running;
-                Trex.Top = 290;
+                Character.Image = Properties.Resources.Running;
+                Character.Top = 290;
                 changeAnim = false;
             }
         }
@@ -229,37 +229,40 @@ namespace Dino_Endless_Running_Project
 
             lblScore.Text = "Score: " + score;
 
-            hitBox.Left = Trex.Right - (hitBox.Width + 20);
-            hitBox.Top = Trex.Top + 5;
+            hitBox.Left = Character.Right - (hitBox.Width + 20);
+            hitBox.Top = Character.Top + 5;
 
             if (jumping)
             {
-                Trex.Top -= speed;
+                Character.Top -= speed;
 
-                if (Trex.Top < 150)
+                if (Character.Top < 150)
                 {
                     speed = -10;
                 }
-                if (Trex.Top > 290)
+                if (Character.Top > 290)
                 {
                     jumping = false;
-                    Trex.Top = 290;
+                    Character.Top = 290;
                     speed = 10;
                 }
             }
 
+            CheckCollision();
+        }
+        private void CheckCollision()
+        {
             foreach (PictureBox x in obstacles)
             {
                 if (x.Bounds.IntersectsWith(hitBox.Bounds))
                 {
                     GameTimer.Stop();
-                    Trex.Image = Properties.Resources.Lose;
+                    Character.Image = Properties.Resources.Lose;
                     gameover = true;
                     HitSound = new SoundPlayer(localPath + @"/Audio/End.wav");
                     HitSound.Play();
-                    Trex.Top = 290;
 
-                    //Save File highest score (only one score)
+                    // Cập nhật điểm cao nhất
                     if (score > HighestScore)
                     {
                         HighestScore = score;
@@ -272,6 +275,7 @@ namespace Dino_Endless_Running_Project
                 }
             }
         }
+
         private void SaveHighestScore()
         {
             File.WriteAllText(scoreFilePath, HighestScore.ToString());
