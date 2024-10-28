@@ -1,0 +1,10 @@
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\bin\Debug\Dino Endless Running Project.exe.config
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\bin\Debug\Dino Endless Running Project.exe
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\bin\Debug\Dino Endless Running Project.pdb
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino Endless Running Project.csproj.AssemblyReference.cache
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino_Endless_Running_Project.Form1.resources
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino_Endless_Running_Project.Properties.Resources.resources
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino Endless Running Project.csproj.GenerateResource.cache
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino Endless Running Project.csproj.CoreCompileInputs.cache
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino Endless Running Project.exe
+C:\Users\tranh\source\repos\Dino Endless Running Project\Dino Endless Running Project\obj\Debug\Dino Endless Running Project.pdb
